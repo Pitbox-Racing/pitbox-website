@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pitbox — Your Race Engineer on iPhone</title>
-  <meta name="description" content="Pitbox is a real-time sim racing companion for iPhone. The data your game doesn't show you, delivered the way a race engineer would." />
+  <title>Pitbox — Your Race Engineer</title>
+  <meta name="description" content="Pitbox is a real-time sim racing companion. The data your game doesn't show you, delivered the way a race engineer would." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
@@ -27,7 +27,7 @@
       background: var(--bg);
       color: var(--white);
       font-family: 'IBM Plex Mono', monospace;
-      cursor: crosshair;
+      cursor: none;
       overflow-x: hidden;
     }
 
@@ -331,7 +331,7 @@
   <section id="hero">
     <div class="hero-spacer"></div>
     <div class="hero-body">
-      <p class="eyebrow">// Sim racing companion &nbsp;—&nbsp; iPhone</p>
+      <p class="eyebrow">// Sim racing companion</p>
       <h1 class="headline">Your Race<br><em>Engineer.</em></h1>
       <p class="hero-desc">
         The data your sim doesn't show you — clearly, in real time,
@@ -373,10 +373,10 @@
         </div>
         <div class="about-right">
           <p class="body-text">
-            Pitbox is a <strong>real-time sim racing companion for iPhone</strong>.
+            Pitbox is a <strong>real-time sim racing companion</strong>.
             It reads the live telemetry your sim broadcasts over Wi-Fi and turns it
             into a dashboard — the kind of information a race engineer would give you
-            through a headset, now on your phone.
+            through a headset, now on your screen.
           </p>
           <p class="body-text">
             Your sim shows you what's happening on screen. Pitbox shows you what's
@@ -384,7 +384,7 @@
             penalties — presented clearly, without burying the signal in noise.
           </p>
           <p class="body-text">
-            No cables. No extra hardware. Just your iPhone on your rig,
+            No cables. No extra hardware. Just your device on your rig,
             connected over your local network.
           </p>
           <p class="body-text">
@@ -438,7 +438,7 @@
           <p class="feature-num">F — 02</p>
           <h3 class="feature-title">Live Dashboard</h3>
           <p class="feature-desc">
-            A landscape display on iPhone showing real-time session data
+            A landscape display showing real-time session data
             as you drive. Designed to be read at a glance, not studied.
           </p>
         </div>
@@ -474,8 +474,8 @@
           <p class="feature-num">F — 06</p>
           <h3 class="feature-title">iPhone Native</h3>
           <p class="feature-desc">
-            Built entirely in Swift for iOS. Dark mode, landscape,
-            high-frequency rendering. No subscriptions to get started.
+            Dark mode, landscape orientation, high-frequency rendering.
+            No subscriptions to get started.
           </p>
         </div>
 
@@ -493,7 +493,7 @@
       <div class="specs-grid">
         <div class="spec-row">
           <span class="spec-key">Platform</span>
-          <span class="spec-val">iPhone — iOS 26+</span>
+          <span class="spec-val">iPhone — iOS 16+</span>
         </div>
         <div class="spec-row">
           <span class="spec-key">Connection</span>
@@ -541,7 +541,7 @@
           <h3 class="contact-card-title">Say Hello</h3>
           <div class="contact-card-value">
             Questions, partnerships, or press:<br><br>
-            <a href="mailto:soufiane@pitboxapp.com">soufiane@pitboxapp.com</a>
+            <a href="/cdn-cgi/l/email-protection#7f0c100a19161e111a3f0f160b1d10071e0f0f511c1012"><span class="__cf_email__" data-cfemail="eb98849e8d828a858eab9b829f8984938a9b9bc5888486">[email&#160;protected]</span></a>
           </div>
         </div>
 
@@ -550,7 +550,7 @@
           <h3 class="contact-card-title">Get Help</h3>
           <div class="contact-card-value">
             Bug reports, support, or TestFlight access:<br><br>
-            <a href="mailto:soufiane@pitboxapp.com">soufiane@pitboxapp.com</a>
+            <a href="/cdn-cgi/l/email-protection#ec9f83998a858d8289ac9c85988e83948d9c9cc28f8381"><span class="__cf_email__" data-cfemail="b7c4d8c2d1ded6d9d2f7c7dec3d5d8cfd6c7c799d4d8da">[email&#160;protected]</span></a>
           </div>
         </div>
 
@@ -569,15 +569,14 @@
           <h3 class="contact-card-title">Data &amp; Privacy</h3>
           <div class="contact-card-value">
             Privacy-related queries:<br><br>
-            <a href="mailto:soufiane@pitboxapp.com">soufiane@pitboxapp.com</a><br><br>
+            <a href="/cdn-cgi/l/email-protection#75061a00131c141b1035051c01171a0d1405055b161a18"><span class="__cf_email__" data-cfemail="93e0fce6f5faf2fdf6d3e3fae7f1fcebf2e3e3bdf0fcfe">[email&#160;protected]</span></a><br><br>
             <a href="privacy.html">Read our Privacy Policy →</a>
           </div>
         </div>
 
       </div>
     </div>
-  </section>
-
+  </section
   <footer class="site-footer">
     <div class="footer-left">
       © 2026 Pitbox Racing Ltd — Registered in England &amp; Wales<br>
@@ -590,6 +589,79 @@
       <a href="#contact">Contact</a>
     </div>
   </footer>
+
+<style>
+  #tyre-cursor {
+    position: fixed; pointer-events: none; z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+  #compound-toast {
+    position: fixed; pointer-events: none; z-index: 9998;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px; letter-spacing: 0.25em; text-transform: uppercase;
+    opacity: 0; transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(0px); white-space: nowrap;
+  }
+  #compound-toast.show { opacity: 1; transform: translateY(-4px); }
+</style>
+
+<div id="tyre-cursor"></div>
+<div id="compound-toast"></div>
+
+<script>
+  const compounds = [
+    {
+      name: 'Soft', color: '#DA4040',
+      svg: '<svg width="28" height="28" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#cs)"><circle cx="57" cy="57" r="48.45" stroke="black" stroke-width="17.1"/><path d="M77.4271 13.7437C86.049 17.7171 93.2991 24.158 98.2605 32.2519C103.222 40.3458 105.672 49.7292 105.3 59.2154C104.929 68.7017 101.753 77.8647 96.1734 85.5458C90.5943 93.2269 82.8627 99.0812 73.9564 102.368" stroke="#DA4040" stroke-width="4" stroke-linecap="round"/><path d="M40.2855 101.753C31.4811 98.2018 23.9272 92.12 18.5793 84.2761C13.2313 76.4323 10.3295 67.1787 10.2406 57.6856C10.1518 48.1925 12.8799 38.8863 18.0801 30.9437C23.2803 23.0011 30.719 16.779 39.4555 13.064" stroke="#DA4040" stroke-width="4" stroke-linecap="round"/><path d="M56.6484 74.5625C54.1172 74.5625 51.8984 74.1797 49.9922 73.4141C48.1016 72.6484 46.6016 71.5547 45.4922 70.1328C44.3828 68.6953 43.7578 66.9844 43.6172 65L43.5938 64.6484H48.7266L48.7734 64.9531C48.9297 65.9844 49.3594 66.8828 50.0625 67.6484C50.7812 68.3984 51.7188 68.9766 52.875 69.3828C54.0312 69.7891 55.3594 69.9922 56.8594 69.9922C58.375 69.9922 59.6797 69.7812 60.7734 69.3594C61.8672 68.9375 62.7109 68.3359 63.3047 67.5547C63.9141 66.7734 64.2188 65.8594 64.2188 64.8125V64.7891C64.2188 63.4297 63.7266 62.3516 62.7422 61.5547C61.7734 60.7422 60.1641 60.0938 57.9141 59.6094L54.2344 58.8359C50.9219 58.1328 48.4531 57.0078 46.8281 55.4609C45.2031 53.8984 44.3906 51.8672 44.3906 49.3672V49.3438C44.4062 47.4219 44.9375 45.7344 45.9844 44.2812C47.0312 42.8125 48.4766 41.6719 50.3203 40.8594C52.1641 40.0312 54.2812 39.6172 56.6719 39.6172C59.0156 39.6172 61.0859 40.0156 62.8828 40.8125C64.6797 41.6094 66.1016 42.7266 67.1484 44.1641C68.1953 45.5859 68.7812 47.25 68.9062 49.1562L68.9297 49.5312H63.7969L63.75 49.2266C63.6094 48.1641 63.2188 47.2578 62.5781 46.5078C61.9531 45.7578 61.1328 45.1875 60.1172 44.7969C59.1016 44.3906 57.9219 44.1875 56.5781 44.1875C55.1875 44.1875 53.9766 44.3984 52.9453 44.8203C51.9141 45.2266 51.1172 45.7969 50.5547 46.5312C49.9922 47.2656 49.7109 48.1328 49.7109 49.1328V49.1562C49.7109 50.4219 50.2109 51.4531 51.2109 52.25C52.2109 53.0469 53.7656 53.6719 55.875 54.125L59.5547 54.9219C61.8828 55.4062 63.7812 56.0625 65.25 56.8906C66.7188 57.7188 67.8047 58.75 68.5078 59.9844C69.2109 61.2188 69.5625 62.7109 69.5625 64.4609V64.4844C69.5625 66.5469 69.0391 68.3359 67.9922 69.8516C66.9609 71.3516 65.4766 72.5156 63.5391 73.3438C61.6172 74.1562 59.3203 74.5625 56.6484 74.5625Z" fill="#EA5252"/></g><defs><clipPath id="cs"><rect width="114" height="114" fill="white"/></clipPath></defs></svg>'
+    },
+    {
+      name: 'Medium', color: '#E1E652',
+      svg: '<svg width="28" height="28" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#cm)"><circle cx="57" cy="57" r="48.45" stroke="black" stroke-width="17.1"/><path d="M77.4271 13.7437C86.049 17.7171 93.2991 24.158 98.2605 32.2519C103.222 40.3458 105.672 49.7292 105.3 59.2154C104.929 68.7017 101.753 77.8647 96.1734 85.5458C90.5943 93.2269 82.8627 99.0812 73.9564 102.368" stroke="#E1E652" stroke-width="4" stroke-linecap="round"/><path d="M40.2855 101.753C31.4811 98.2018 23.9272 92.12 18.5793 84.2761C13.2313 76.4323 10.3295 67.1787 10.2406 57.6856C10.1518 48.1925 12.8799 38.8863 18.0801 30.9437C23.2803 23.0011 30.719 16.779 39.4555 13.064" stroke="#E1E652" stroke-width="4" stroke-linecap="round"/><path d="M40.1172 74V40.1797H46.1875L57.1328 67.1562H57.2734L68.2188 40.1797H74.3125V74H69.5078V49.0625H67.0938L72.5781 41.1172L59.1484 74H55.2578L41.8516 41.1172L47.3359 49.0625H44.9219V74H40.1172Z" fill="#E1E652"/></g><defs><clipPath id="cm"><rect width="114" height="114" fill="white"/></clipPath></defs></svg>'
+    },
+    {
+      name: 'Hard', color: '#F2F2F2',
+      svg: '<svg width="28" height="28" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ch)"><circle cx="57" cy="57" r="48.45" stroke="black" stroke-width="17.1"/><path d="M77.4271 13.7437C86.049 17.7171 93.2991 24.158 98.2605 32.2519C103.222 40.3458 105.672 49.7292 105.3 59.2154C104.929 68.7017 101.753 77.8647 96.1734 85.5458C90.5943 93.2269 82.8627 99.0812 73.9564 102.368" stroke="white" stroke-width="4" stroke-linecap="round"/><path d="M40.2855 101.753C31.4811 98.2018 23.9272 92.12 18.5793 84.2761C13.2313 76.4323 10.3295 67.1787 10.2406 57.6856C10.1518 48.1925 12.8799 38.8863 18.0801 30.9437C23.2803 23.0011 30.719 16.779 39.4555 13.064" stroke="white" stroke-width="4" stroke-linecap="round"/><path d="M43.1172 74V40.1797H48.3672V54.4766H65.7109V40.1797H70.9844V74H65.7109V59.0234H48.3672V74H43.1172Z" fill="white"/></g><defs><clipPath id="ch"><rect width="114" height="114" fill="white"/></clipPath></defs></svg>'
+    },
+    {
+      name: 'Inter', color: '#41B414',
+      svg: '<svg width="28" height="28" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ci)"><circle cx="57" cy="57" r="48.45" stroke="black" stroke-width="17.1"/><path d="M77.4271 13.7437C86.049 17.7171 93.2991 24.158 98.2605 32.2519C103.222 40.3458 105.672 49.7292 105.3 59.2154C104.929 68.7017 101.753 77.8647 96.1734 85.5458C90.5943 93.2269 82.8627 99.0812 73.9564 102.368" stroke="#41B414" stroke-width="4" stroke-linecap="round"/><path d="M40.2855 101.753C31.4811 98.2018 23.9272 92.12 18.5793 84.2761C13.2313 76.4323 10.3295 67.1787 10.2406 57.6856C10.1518 48.1925 12.8799 38.8863 18.0801 30.9437C23.2803 23.0011 30.719 16.779 39.4555 13.064" stroke="#41B414" stroke-width="4" stroke-linecap="round"/><path d="M54.1172 74V40.1797H59.3672V74H54.1172Z" fill="#41B414"/></g><defs><clipPath id="ci"><rect width="114" height="114" fill="white"/></clipPath></defs></svg>'
+    },
+    {
+      name: 'Wet', color: '#146AB4',
+      svg: '<svg width="28" height="28" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#cw)"><circle cx="57" cy="57" r="48.45" stroke="black" stroke-width="17.1"/><path d="M77.4271 13.7437C86.049 17.7171 93.2991 24.158 98.2605 32.2519C103.222 40.3458 105.672 49.7292 105.3 59.2154C104.929 68.7017 101.753 77.8647 96.1734 85.5458C90.5943 93.2269 82.8627 99.0812 73.9564 102.368" stroke="#146AB4" stroke-width="4" stroke-linecap="round"/><path d="M40.2855 101.753C31.4811 98.2018 23.9272 92.12 18.5793 84.2761C13.2313 76.4323 10.3295 67.1787 10.2406 57.6856C10.1518 48.1925 12.8799 38.8863 18.0801 30.9437C23.2803 23.0011 30.719 16.779 39.4555 13.064" stroke="#146AB4" stroke-width="4" stroke-linecap="round"/><path d="M44.1484 74L35.0312 40.1797H40.5156L46.7969 66.6641H46.9141L54.0391 40.1797H59.0312L66.1562 66.6641H66.2734L72.5547 40.1797H78.0391L68.9219 74H63.8594L56.5938 48.5234H56.4766L49.2109 74H44.1484Z" fill="#146AB4"/></g><defs><clipPath id="cw"><rect width="114" height="114" fill="white"/></clipPath></defs></svg>'
+    },
+  ];
+
+  let current = 0;
+
+  const cursorEl = document.getElementById('tyre-cursor');
+  const toast    = document.getElementById('compound-toast');
+  let toastTimer = null;
+
+  function setCompound(index) {
+    current = index;
+    const c = compounds[current];
+    cursorEl.innerHTML = c.svg;
+    toast.textContent  = c.name;
+    toast.style.color  = c.color;
+    clearTimeout(toastTimer);
+    toast.classList.add('show');
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 900);
+  }
+
+  document.addEventListener('mousemove', (e) => {
+    cursorEl.style.left = e.clientX + 'px';
+    cursorEl.style.top  = e.clientY + 'px';
+    toast.style.left    = (e.clientX + 22) + 'px';
+    toast.style.top     = (e.clientY - 14) + 'px';
+  });
+
+  document.addEventListener('click', () => {
+    setCompound((current + 1) % compounds.length);
+  });
+
+  setCompound(0);
+</script>
 
 </body>
 </html>
