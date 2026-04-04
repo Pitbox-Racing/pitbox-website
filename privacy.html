@@ -108,7 +108,7 @@
 
     .toc-list li a {
       display: flex; align-items: baseline; gap: 12px; padding: 10px 0;
-      border-top: 1px solid var(--line); font-size: 9px; letter-spacing: 0.18em;
+      font-size: 9px; letter-spacing: 0.18em;
       color: var(--dim2); text-transform: uppercase; text-decoration: none; transition: color 0.2s;
     }
     .toc-list li a:hover { color: var(--white); }
@@ -150,7 +150,7 @@
     .highlight-box p { margin-bottom: 0 !important; }
 
     footer {
-      position: relative; z-index: 1; border-top: 1px solid var(--line2);
+      position: relative; z-index: 1; border-top: 1px solid var(--red);
       padding: 36px 52px; display: flex; justify-content: space-between;
       align-items: center; flex-wrap: wrap; gap: 16px;
     }
@@ -185,12 +185,15 @@
   <div class="corner-glow"></div>
 
   <nav>
-    <a href="index.html" class="logo">
-      <div class="logo-dot"></div>
-      Pitbox
-    </a>
+  <a href="index.html" class="logo">
+    <div class="logo-dot"></div>
+    Pitbox
+  </a>
+  <div style="display: flex; align-items: center; gap: 28px;">
+    <a href="terms.html" class="nav-back">Terms of Use</a>
     <a href="index.html" class="nav-back">← Back to site</a>
-  </nav>
+  </div>
+</nav>
 
   <main class="page">
 
@@ -456,7 +459,7 @@
         <li><strong>Company</strong> &nbsp;Pitbox Racing Ltd</li>
         <li><strong>Registered in</strong> &nbsp;England &amp; Wales</li>
         <li><strong>Location</strong> &nbsp;London, United Kingdom</li>
-        <li><strong>Email</strong> &nbsp;<a href="/cdn-cgi/l/email-protection#3c4f53495a555d52597c4c55485e53445d4c4c125f5351"><span class="__cf_email__" data-cfemail="22514d57444b434c4762524b56404d5a4352520c414d4f">[email&#160;protected]</span></a></li>
+        <li><strong>Email</strong> &nbsp;<a href="mailto:soufiane@pitbox.com">soufiane@pitbox.com</a></li>
         <li><strong>Website</strong> &nbsp;<a href="https://pitboxapp.com">pitboxapp.com</a></li>
       </ul>
       <p>We aim to respond to all privacy enquiries within <strong>30 days</strong>.</p>
@@ -464,7 +467,13 @@
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="footer-left">
       © 2026 Pitbox Racing Ltd — Registered in England &amp; Wales<br>
-      London, United Kingdom · pit
+      London, United Kingdom · pitboxapp.com
+    </div>
+    <div class="footer-right">
+      <a href="index.html">Back to site</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </footer>
