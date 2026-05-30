@@ -186,11 +186,14 @@
   <div class="corner-glow"></div>
 
   <nav>
-    <a href="#hero" class="logo">
+    <a href="index.html" class="logo">
       <div class="logo-dot"></div>
       Pitbox
     </a>
-    <a href="index.html" class="nav-back">← Back to site</a>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <a href="privacy.html" class="nav-back">Privacy Policy</a>
+      <a href="index.html" class="nav-back">← Back to site</a>
+    </div>
   </nav>
 
   <main class="page">
@@ -201,7 +204,7 @@
       <div class="page-meta">
         <div class="meta-item">
           <span class="meta-label">Last updated</span>
-          <span class="meta-value">April 2026</span>
+          <span class="meta-value">May 2026</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Company</span>
@@ -266,12 +269,12 @@
         <h2 class="section-title">The Service</h2>
       </div>
       <p>
-        Pitbox is a real-time sim racing companion app for iPhone. It receives telemetry data
-        broadcast by compatible sim racing games over your local Wi-Fi network via UDP, and
-        displays it as a live driver dashboard.
+        Pitbox is a real-time sim racing companion app for iPhone, with an Android version
+        coming soon. It receives telemetry data broadcast by compatible sim racing games over
+        your local Wi-Fi network via UDP, and displays it as a live driver dashboard.
       </p>
       <p>
-        The App is designed to work with <strong>F1 24, F1 25</strong> on PC,
+        The App is designed to work with <strong>F1 23, F1 24, F1 25, and F1 26</strong> on PC,
         PlayStation 4, PlayStation 5, and Xbox, when the device running the App and the
         gaming platform are connected to the same local network. We do not guarantee
         compatibility with other games or future game updates.
@@ -312,8 +315,9 @@
         cancel before the trial ends.
       </p>
       <p>
-        Trial eligibility is determined by Apple and applies per Apple ID. If you have
-        previously subscribed to Pitbox Pro you may not be eligible for a further free trial.
+        Trial eligibility is determined by the App Store you subscribe through — Apple per Apple ID,
+        or Google per Google account. If you have previously subscribed to Pitbox Pro you may not be
+        eligible for a further free trial.
       </p>
     </div>
 
@@ -323,14 +327,15 @@
         <h2 class="section-title">Billing &amp; Cancellation</h2>
       </div>
       <p>
-        Pitbox Pro is sold as an auto-renewing subscription through the Apple App Store.
-        Billing is handled entirely by Apple — Pitbox Racing Ltd does not process or store
-        your payment information.
+        Pitbox Pro is sold as an auto-renewing subscription through the <strong>Apple App Store</strong>
+        (on iPhone) or <strong>Google Play</strong> (on Android). Billing is handled entirely by Apple
+        or Google — Pitbox Racing Ltd does not process or store your payment information. Where you are
+        signed in, your subscription is synced across platforms via your account.
       </p>
       <ul>
-        <li><strong>Billing</strong> — your subscription renews automatically at the end of each period and your Apple ID is charged through your App Store account</li>
-        <li><strong>Cancellation</strong> — you may cancel at any time through your device's subscription settings or the App Store; cancellation takes effect at the end of the current billing period</li>
-        <li><strong>Refunds</strong> — all refund requests are handled by Apple under their standard refund policy; Pitbox Racing Ltd does not issue refunds directly</li>
+        <li><strong>Billing</strong> — your subscription renews automatically at the end of each period and your Apple ID or Google account is charged through the relevant store</li>
+        <li><strong>Cancellation</strong> — you may cancel at any time through your device's subscription settings in the App Store or Google Play; cancellation takes effect at the end of the current billing period</li>
+        <li><strong>Refunds</strong> — all refund requests are handled by Apple or Google under their standard refund policies; Pitbox Racing Ltd does not issue refunds directly</li>
         <li><strong>Price changes</strong> — we will notify you of any price changes in advance; continued use after a price change constitutes acceptance of the new price</li>
       </ul>
       <p>
@@ -344,19 +349,23 @@
         <h2 class="section-title">Your Account</h2>
       </div>
       <p>
-        Pitbox optionally supports <strong>Sign in with Apple</strong>. Creating an account
-        is not required to use the Free tier, but may be required to access certain Pro
-        features across devices.
+        Pitbox optionally supports <strong>Sign in with Apple</strong> and
+        <strong>Google Sign-In</strong>, handled through Firebase Authentication. Creating an
+        account is not required to use the Free tier, but signing in lets us sync your Pitbox Pro
+        subscription across your devices and between iPhone and Android.
       </p>
       <p>
-        You are responsible for maintaining the security of your Apple ID. Pitbox Racing Ltd
-        is not liable for any loss or damage arising from unauthorised access to your account.
+        You are responsible for maintaining the security of the Apple ID or Google account you use
+        to sign in. Pitbox Racing Ltd is not liable for any loss or damage arising from unauthorised
+        access to your account.
       </p>
       <p>
-        You may use the App without signing in. If you choose to sign in, you may delete
-        your account at any time from within the App settings. Account deletion removes
-        your sign-in association; anonymous data already collected remains as described
-        in our <a href="privacy.html">Privacy Policy</a>.
+        You may use the App without signing in. If you choose to sign in, you may delete your account
+        at any time from <strong>Settings → Account → Delete Account</strong> within the App, or by
+        emailing us. Deleting your account permanently erases all personal data we hold about you,
+        including your sign-in details and account-linked purchase records, as described in our
+        <a href="privacy.html#s8">Privacy Policy</a>. Anonymous data that is not linked to your identity
+        is unaffected.
       </p>
     </div>
 
@@ -396,7 +405,7 @@
       </p>
       <p>
         F1, Formula One, and related marks are trademarks of Formula One Licensing BV.
-        EA, the EA logo, F1 24, F1 25, and F1 26 are trademarks of Electronic Arts Inc.
+        EA, the EA logo, F1 23, F1 24, F1 25, and F1 26 are trademarks of Electronic Arts Inc.
         Pitbox Racing Ltd is not affiliated with or endorsed by any of these parties.
       </p>
     </div>
@@ -509,7 +518,7 @@
         <li><strong>Company</strong> &nbsp;Pitbox Racing Ltd</li>
         <li><strong>Registered in</strong> &nbsp;England &amp; Wales</li>
         <li><strong>Location</strong> &nbsp;London, United Kingdom</li>
-        <li><strong>Email</strong> &nbsp;</a><a href="mailto:soufiane@pitboxapp.com">soufiane@pitboxapp.com</a></li>
+        <li><strong>Email</strong> &nbsp;<a href="mailto:soufiane@pitboxapp.com">soufiane@pitboxapp.com</a></li>
         <li><strong>Website</strong> &nbsp;<a href="https://pitboxapp.com">pitboxapp.com</a></li>
       </ul>
       <p>We aim to respond to all enquiries within <strong>30 days</strong>.</p>
